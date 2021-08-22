@@ -1,8 +1,9 @@
 package shortener
 
 import (
-	"github.com/stretchr/testify/assert"
 	"testing"
+
+	"github.com/stretchr/testify/assert"
 )
 
 const UserId = "e0dba740-fc4b-4977-872c-d360239e6b1a"
@@ -16,7 +17,6 @@ func TestShortLinkGenerator(t *testing.T) {
 
 	initialLink_3 := "https://github.com/nightpython"
 	shortLink_3 := UrlGenerator(initialLink_3, UserId)
-
 
 	assert.Equal(t, shortLink_1, "4J67wvBh")
 	assert.Equal(t, shortLink_2, "wiZFZhsu")

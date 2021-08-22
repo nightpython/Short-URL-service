@@ -1,10 +1,11 @@
 package handler
 
 import (
+	"net/http"
+
 	"github.com/gin-gonic/gin"
 	"github.com/my/repo/shortener"
 	"github.com/my/repo/store"
-	"net/http"
 )
 
 //модель запроса
